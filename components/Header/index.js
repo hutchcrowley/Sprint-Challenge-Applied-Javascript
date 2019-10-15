@@ -10,6 +10,7 @@
 // And add it to the DOM in the .header-container component
 
 const headerCreator = () => {
+    const headerContainer = document.createElement('div');
     const header = document.createElement('div');
     const date = document.createElement('span');
     const headLine = docuement.createElement('h1');
@@ -29,6 +30,8 @@ const headerCreator = () => {
     headercontainer.appendChild(temp);
 
     return header;
-}
+};
 
-const headerContainer = document.querySelector('.header-container')
+const headerContainer = document.querySelector('.header-container');
+
+headerCreator();
