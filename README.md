@@ -29,33 +29,38 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the DOM?
+   <!-- The Document Object Model, also known as the DOM, is a web Application Programming Interface, or API. It is a language-neutral interface which is arranged in a tree-like structure that describes the structure of the HTML. Each element of the HTML document is represented by a different type of node. The document itself would be conisdered a root node. Then, there are element nodes, for things like divs and class names. These nodes can themselves have child nodes, which can be more element nodes. Some of these chideren will be the last type of node, such as a text node or comment node. These node objects are given a nodeType property, which is a number from 1 to 8. This is it's constant property. There are a number of properties and methods on these various objects that allow us to interact with, and manipulate the DOM using JavaScript. -->
 
 2. What is an event?
+   <!-- An event is what it is called when a user interacts with the web site, and thus the DOM. This could be anything from clicking the mouse, to simply hovering over a given element, or striking a key on the keyboard.The browser detects and tracks these events, which allow the developer a number of options to give the user to interact with the DOM. -->
 
 3. What is an event listener?
+<!-- An event listener is an instruction to a specific element to listen to a specific event and fire a callback function when that event occurs. The event listener method takes two arguments. First, is the event to listen for, such as 'click' or 'mouseover'. The second is the callback to fire when that event is triggered. This allows us to create an interface that the user can interact with and give instructions to the DOM. -->
 
 4. Why would we convert a NodeList into an Array?
+<!-- You would convert a NodeList into an array to access the methods on the Array object. A NodeList is only an array-like object, meaning that it looks like an array and holds data like an array, but does not have access to the same methods as an array, and can behave differently. You would use the .from() method to convert the NodeList into a true Array, which then gives it access to methods like .map(). -->
 
 5. What is a component?
+<!-- A component is a reusable piece of code that can be used to build elements sharing functionality and styling. Essentially, it is the basic building block of applications, libraries, etc. It allows JavaScript to become more like putting together different modules than having to write each and every line of code of any given website/ application/ etc. It helps keep code DRY, and simplifies development. -->
 
 ### Git Set up
 
-* [ ] Fork the project into your GitHub user account
-* [ ] Clone the forked project into a directory on your machine
-* [ ] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
-* [ ] You are now ready to build this project with your preferred IDE
+* [+] Fork the project into your GitHub user account
+* [+] Clone the forked project into a directory on your machine
+* [+] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
+* [+] You are now ready to build this project with your preferred IDE
 
 ## Minimum Viable Product
 
 Your finished project must include all of the following requirements:
 
-* [ ] Look through the HTML code and familiarize yourself with the different sections. Some of them already exist, but some need to be filled in. DO NOT add any code to the HTML file itself.
+* [+] Look through the HTML code and familiarize yourself with the different sections. Some of them already exist, but some need to be filled in. DO NOT add any code to the HTML file itself.
 
-* [ ] Following the instructions in the `Header/index.js` file, create the Header component. 
+* [+] Following the instructions in the `Header/index.js` file, create the Header component.
 
-* [ ] Following the instructions in the `Tabs/index.js` file, create individual Tabs components.
+* [+] Following the instructions in the `Tabs/index.js` file, create individual Tabs components.
 
-* [ ] Following the instructions in the `Cards/index.js` file, create individual Cards components.
+* [+] Following the instructions in the `Cards/index.js` file, create individual Cards components.
 
 ## Stretch Problems
 
